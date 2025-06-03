@@ -77,52 +77,53 @@ const Home = () => {
                 </button>
             </div>
 
-            <div className='flex flex-row gap-8 py-10 px-36 justify-center'>
-                <div className='flex flex-col gap-8'>
-                    <div className="relative w-full h-[80vh] overflow-hidden">
-                        <img src={images.banner02} alt="Dresses" className="w-full h-full object-cover transition-transform duration-500 ease-in-out hover:scale-110" />
-                        <button className="absolute bottom-6 left-1/2 -translate-x-1/2 bg-white text-black px-6 py-3 shadow-md uppercase tracking-wider text-sm  hover:bg-[#e65540] hover:text-white">
+            <div className='flex flex-col md:flex-row gap-6 sm:gap-8 py-10 px-4 sm:px-8 md:px-16 lg:px-36 justify-center'>
+                <div className='flex flex-col gap-4 sm:gap-6 md:gap-8 w-full md:w-auto'>
+                    <div className="relative w-full h-[50vh] sm:h-[60vh] md:h-[80vh] overflow-hidden">
+                        <img src={images.banner02} alt="DRESSES" className="w-full h-full object-cover transition-transform duration-500 ease-in-out hover:scale-110" />
+                        <button className="absolute bottom-4 sm:bottom-6 left-1/2 -translate-x-1/2 bg-white text-black px-4 sm:px-6 py-2 sm:py-3 shadow-md uppercase tracking-wider text-xs sm:text-sm hover:bg-[#e65540] hover:text-white">
                             DRESSES
                         </button>
                     </div>
-                    <div className="relative w-full h-[40vh] overflow-hidden">
+                    <div className="relative w-full h-[25vh] sm:h-[30vh] md:h-[40vh] overflow-hidden">
                         <img src={images.cards4} alt="SUNGLASSES" className="w-full h-full object-cover transition-transform duration-500 ease-in-out hover:scale-110" />
-                        <button className="absolute bottom-6 left-1/2 -translate-x-1/2 bg-white text-black px-6 py-3 shadow-md uppercase tracking-wider text-sm  hover:bg-[#e65540] hover:text-white">
+                        <button className="absolute bottom-4 sm:bottom-6 left-1/2 -translate-x-1/2 bg-white text-black px-4 sm:px-6 py-2 sm:py-3 shadow-md uppercase tracking-wider text-xs sm:text-sm hover:bg-[#e65540] hover:text-white">
                             SUNGLASSES
                         </button>
                     </div>
                 </div>
-                <div className='flex flex-col gap-8'>
-                    <div className="relative w-full h-[40vh] overflow-hidden">
+
+                <div className='flex flex-col gap-4 sm:gap-6 md:gap-8 w-full md:w-auto'>
+                    <div className="relative w-full h-[25vh] sm:h-[30vh] md:h-[40vh] overflow-hidden">
                         <img src={images.cards2} alt="WATCHES" className="w-full h-full object-cover transition-transform duration-500 ease-in-out hover:scale-110" />
-                        <button className="absolute bottom-6 left-1/2 -translate-x-1/2 bg-white text-black px-6 py-3 shadow-md uppercase tracking-wider text-sm  hover:bg-[#e65540] hover:text-white">
+                        <button className="absolute bottom-4 sm:bottom-6 left-1/2 -translate-x-1/2 bg-white text-black px-4 sm:px-6 py-2 sm:py-3 shadow-md uppercase tracking-wider text-xs sm:text-sm hover:bg-[#e65540] hover:text-white">
                             WATCHES
                         </button>
                     </div>
-                    <div className="relative w-full h-[80vh] overflow-hidden">
+                    <div className="relative w-full h-[50vh] sm:h-[60vh] md:h-[80vh] overflow-hidden">
                         <img src={images.banner07} alt="FOOTERWEAR" className="w-full h-full object-cover transition-transform duration-500 ease-in-out hover:scale-110" />
-                        <button className="absolute bottom-6 left-1/2 -translate-x-1/2 bg-white text-black px-6 py-3 shadow-md uppercase tracking-wider text-sm  hover:bg-[#e65540] hover:text-white">
+                        <button className="absolute bottom-4 sm:bottom-6 left-1/2 -translate-x-1/2 bg-white text-black px-4 sm:px-6 py-2 sm:py-3 shadow-md uppercase tracking-wider text-xs sm:text-sm hover:bg-[#e65540] hover:text-white">
                             FOOTERWEAR
                         </button>
                     </div>
                 </div>
-                <div className='flex flex-col gap-8'>
-                    <div className="relative w-full h-[80vh] overflow-hidden">
+
+                <div className='flex flex-col gap-4 sm:gap-6 md:gap-8 w-full md:w-auto'>
+                    <div className="relative w-full h-[50vh] sm:h-[60vh] md:h-[80vh] overflow-hidden">
                         <img src={images.cards3} alt="BAGS" className="w-full h-full object-cover transition-transform duration-500 ease-in-out hover:scale-110" />
-                        <button className="absolute bottom-6 left-1/2 -translate-x-1/2 bg-white text-black px-6 py-3 shadow-md uppercase tracking-wider text-sm hover:bg-[#e65540] hover:text-white">
+                        <button className="absolute bottom-4 sm:bottom-6 left-1/2 -translate-x-1/2 bg-white text-black px-4 sm:px-6 py-2 sm:py-3 shadow-md uppercase tracking-wider text-xs sm:text-sm hover:bg-[#e65540] hover:text-white">
                             BAGS
                         </button>
                     </div>
-                    <div className="relative w-full h-[40vh] overflow-hidden">
+                    <div className="relative w-full h-[25vh] sm:h-[30vh] md:h-[40vh] overflow-hidden">
                         <img src={images.cards6} alt="ACCESSORIES" className="w-full h-full object-cover transition-transform duration-500 ease-in-out hover:scale-110" />
-                        <button className="absolute bottom-6 left-1/2 -translate-x-1/2 bg-white text-black px-6 py-3 shadow-md uppercase tracking-wider text-sm hover:bg-[#e65540] hover:text-white">
+                        <button className="absolute bottom-4 sm:bottom-6 left-1/2 -translate-x-1/2 bg-white text-black px-4 sm:px-6 py-2 sm:py-3 shadow-md uppercase tracking-wider text-xs sm:text-sm hover:bg-[#e65540] hover:text-white">
                             ACCESSORIES
                         </button>
                     </div>
                 </div>
-
-
             </div>
+
 
             <div className="max-w-[1200px] mx-auto py-10 px-4 sm:px-8">
                 <h1 className="text-center font-bold text-3xl tracking-wide mb-6 uppercase">FEATURED PRODUCTS</h1>
