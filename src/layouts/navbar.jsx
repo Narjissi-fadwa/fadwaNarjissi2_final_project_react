@@ -49,13 +49,13 @@ const Navbar = () => {
             <header className={`flex items-center justify-between p-6 z-[1000] transition-all duration-300 ${isScrolled ? 'fixed top-0 left-0 w-full shadow-md bg-white' : ''}`} >
                 <div className="logo"><img src={images.logo} alt="" /></div>
                 <nav className="nav flex align-items-center gap-9 justify-between">
-                    <a className='hover:text-[#e65540]' href="/">Home</a>
-                    <a className='hover:text-[#e65540]' href="/">Shop</a>
-                    <a className='hover:text-[#e65540]' href="/">Sale</a>
-                    <a className='hover:text-[#e65540]' href="/">Features</a>
-                    <a className='hover:text-[#e65540]' href="/">Blog</a>
-                    <a className='hover:text-[#e65540]' href="/">About</a>
-                    <a className='hover:text-[#e65540]' href="/">Contact</a>
+                    <a className='hover:underline' href="/">Home</a>
+                    <a className='hover:underline' href="/">Shop</a>
+                    <a className='hover:underline' href="/">Sale</a>
+                    <a className='hover:underline' href="/">Features</a>
+                    <a className='hover:underline' href="/">Blog</a>
+                    <a className='hover:underline' href="/">About</a>
+                    <a className='hover:underline' href="/">Contact</a>
                 </nav>
                 <div className='icons flex align-items-center gap-3'>
                     <UserIcon className="w-6 h-6 text-gray-600 hover:text-[#e65540]" />
