@@ -3,6 +3,7 @@ import { Carousel } from 'flowbite';
 import images from '../../../constant/images';
 import { motion } from "framer-motion";
 import productJson from '../../../json/product.json';
+import { Link } from 'react-router-dom';
 
 const filters = [
     { label: 'All', key: 'all' },
@@ -42,11 +43,11 @@ const Home = () => {
                             <div className='flex flex-col gap-3 items-center'>
                                 <span className='text-white font-bold mb-3'>Women collection 2025</span>
                                 <h1 className='text-white font-bold text-5xl mb-8'>NEW ARRIVALS</h1>
-                                <motion.button initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, ease: "easeOut" }} viewport={{ once: true }}
+                                <Link to="/Shop"> <motion.button initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, ease: "easeOut" }} viewport={{ once: true }}
                                     className="bg-white w-fit text-black rounded-4xl px-14 py-3"
                                 >
                                     SHOP NOW
-                                </motion.button>
+                                </motion.button></Link>
                             </div>
                         </div>
                     ))}
@@ -74,45 +75,45 @@ const Home = () => {
                 <div className='flex flex-col gap-4 sm:gap-6 md:gap-8 w-full md:w-auto'>
                     <div className="relative w-full h-[50vh] sm:h-[60vh] md:h-[80vh] overflow-hidden">
                         <img src={images.banner02} alt="DRESSES" className="w-full h-full object-cover transition-transform duration-500 ease-in-out hover:scale-110" />
-                        <button className="absolute bottom-4 sm:bottom-6 left-1/2 -translate-x-1/2 bg-white text-black px-4 sm:px-6 py-2 sm:py-3 shadow-md uppercase tracking-wider text-xs sm:text-sm hover:bg-[#e65540] hover:text-white">
+                        <Link to="/Shop"><button className="absolute bottom-4 sm:bottom-6 left-1/2 -translate-x-1/2 bg-white text-black px-4 sm:px-6 py-2 sm:py-3 shadow-md uppercase tracking-wider text-xs sm:text-sm hover:bg-[#e65540] hover:text-white">
                             DRESSES
-                        </button>
+                        </button></Link>
                     </div>
                     <div className="relative w-full h-[25vh] sm:h-[30vh] md:h-[40vh] overflow-hidden">
                         <img src={images.cards4} alt="SUNGLASSES" className="w-full h-full object-cover transition-transform duration-500 ease-in-out hover:scale-110" />
-                        <button className="absolute bottom-4 sm:bottom-6 left-1/2 -translate-x-1/2 bg-white text-black px-4 sm:px-6 py-2 sm:py-3 shadow-md uppercase tracking-wider text-xs sm:text-sm hover:bg-[#e65540] hover:text-white">
+                        <Link to="/Shop"><button className="absolute bottom-4 sm:bottom-6 left-1/2 -translate-x-1/2 bg-white text-black px-4 sm:px-6 py-2 sm:py-3 shadow-md uppercase tracking-wider text-xs sm:text-sm hover:bg-[#e65540] hover:text-white">
                             SUNGLASSES
-                        </button>
+                        </button></Link>
                     </div>
                 </div>
 
                 <div className='flex flex-col gap-4 sm:gap-6 md:gap-8 w-full md:w-auto'>
                     <div className="relative w-full h-[25vh] sm:h-[30vh] md:h-[40vh] overflow-hidden">
                         <img src={images.cards2} alt="WATCHES" className="w-full h-full object-cover transition-transform duration-500 ease-in-out hover:scale-110" />
-                        <button className="absolute bottom-4 sm:bottom-6 left-1/2 -translate-x-1/2 bg-white text-black px-4 sm:px-6 py-2 sm:py-3 shadow-md uppercase tracking-wider text-xs sm:text-sm hover:bg-[#e65540] hover:text-white">
+                        <Link to="/Shop"><button className="absolute bottom-4 sm:bottom-6 left-1/2 -translate-x-1/2 bg-white text-black px-4 sm:px-6 py-2 sm:py-3 shadow-md uppercase tracking-wider text-xs sm:text-sm hover:bg-[#e65540] hover:text-white">
                             WATCHES
-                        </button>
+                        </button></Link>
                     </div>
                     <div className="relative w-full h-[50vh] sm:h-[60vh] md:h-[80vh] overflow-hidden">
                         <img src={images.banner07} alt="FOOTERWEAR" className="w-full h-full object-cover transition-transform duration-500 ease-in-out hover:scale-110" />
-                        <button className="absolute bottom-4 sm:bottom-6 left-1/2 -translate-x-1/2 bg-white text-black px-4 sm:px-6 py-2 sm:py-3 shadow-md uppercase tracking-wider text-xs sm:text-sm hover:bg-[#e65540] hover:text-white">
+                        <Link to="/Shop"><button className="absolute bottom-4 sm:bottom-6 left-1/2 -translate-x-1/2 bg-white text-black px-4 sm:px-6 py-2 sm:py-3 shadow-md uppercase tracking-wider text-xs sm:text-sm hover:bg-[#e65540] hover:text-white">
                             FOOTERWEAR
-                        </button>
+                        </button></Link>
                     </div>
                 </div>
 
                 <div className='flex flex-col gap-4 sm:gap-6 md:gap-8 w-full md:w-auto'>
                     <div className="relative w-full h-[50vh] sm:h-[60vh] md:h-[80vh] overflow-hidden">
                         <img src={images.cards3} alt="BAGS" className="w-full h-full object-cover transition-transform duration-500 ease-in-out hover:scale-110" />
-                        <button className="absolute bottom-4 sm:bottom-6 left-1/2 -translate-x-1/2 bg-white text-black px-4 sm:px-6 py-2 sm:py-3 shadow-md uppercase tracking-wider text-xs sm:text-sm hover:bg-[#e65540] hover:text-white">
+                        <Link to="/Shop"><button className="absolute bottom-4 sm:bottom-6 left-1/2 -translate-x-1/2 bg-white text-black px-4 sm:px-6 py-2 sm:py-3 shadow-md uppercase tracking-wider text-xs sm:text-sm hover:bg-[#e65540] hover:text-white">
                             BAGS
-                        </button>
+                        </button></Link>
                     </div>
                     <div className="relative w-full h-[25vh] sm:h-[30vh] md:h-[40vh] overflow-hidden">
                         <img src={images.cards6} alt="ACCESSORIES" className="w-full h-full object-cover transition-transform duration-500 ease-in-out hover:scale-110" />
-                        <button className="absolute bottom-4 sm:bottom-6 left-1/2 -translate-x-1/2 bg-white text-black px-4 sm:px-6 py-2 sm:py-3 shadow-md uppercase tracking-wider text-xs sm:text-sm hover:bg-[#e65540] hover:text-white">
+                        <Link to="/Shop"><button className="absolute bottom-4 sm:bottom-6 left-1/2 -translate-x-1/2 bg-white text-black px-4 sm:px-6 py-2 sm:py-3 shadow-md uppercase tracking-wider text-xs sm:text-sm hover:bg-[#e65540] hover:text-white">
                             ACCESSORIES
-                        </button>
+                        </button></Link>
                     </div>
                 </div>
             </div>
@@ -122,12 +123,8 @@ const Home = () => {
                 <h1 className="text-center font-bold text-3xl tracking-wide mb-6 uppercase">FEATURED PRODUCTS</h1>
                 <div className="flex justify-center sm:gap-8 gap-3 mb-10 overflow-x-auto whitespace-nowrap sm:whitespace-normal px-2 sm:px-0">
                     {filters.map((category) => (
-                        <a
-                            key={category.key}
-                            href="#"
-                            onClick={e => { e.preventDefault(); setSelectedCategory(category.key); }}
-                            className={`sm:px-2 px-1 sm:text-[17px] text-[13px] font-normal transition-colors duration-200 no-underline ${selectedCategory === category.key ? 'text-black border-b-2 border-black' : 'text-[#222] border-b-0'}`}
-                        >
+                        <a key={category.key} href="#" onClick={e => { e.preventDefault(); setSelectedCategory(category.key); }}
+                            className={`sm:px-2 px-1 sm:text-[17px] text-[13px] font-normal transition-colors duration-200 no-underline ${selectedCategory === category.key ? 'text-black border-b-2 border-black' : 'text-[#222] border-b-0'}`}>
                             {category.label}
                         </a>
                     ))}
@@ -136,17 +133,18 @@ const Home = () => {
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
                     {visibleProducts.map((item) => (
                         <div key={item.id} className="w-full">
-                            <div className="relative w-full aspect-square mb-4">
+                            <div className="relative w-full aspect-square mb-4 group">
                                 {item.sale && (
                                     <span className="absolute top-3 left-3 bg-[#e65540] text-white text-[13px] font-medium rounded px-3 py-0.5 z-10">
                                         Sale
                                     </span>
                                 )}
-                                <img
-                                    src={item.image}
-                                    alt={item.name}
-                                    className="w-full h-full object-cover block"
-                                />
+                                <img src={item.image} alt={item.name} className="w-full h-full object-cover block" />
+                                <div className="absolute inset-0 flex justify-center items-center bg-black/30 opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition duration-300">
+                                    <button className="bg-white absolute bottom-6 text-black px-6 py-2 rounded-2xl hover:bg-[#e65540] hover:text-white">
+                                        ADD TO CART
+                                    </button>
+                                </div>
                             </div>
                             <div className="text-left pl-1">
                                 <div className="text-[15px] text-[#222] mb-0.5">{item.name}</div>
