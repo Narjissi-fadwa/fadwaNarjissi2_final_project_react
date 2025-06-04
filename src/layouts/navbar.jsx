@@ -7,6 +7,7 @@ import PinterestIcon from '../assets/icons/pinterest';
 import GoogleIcon from '../assets/icons/google';
 import InstagramIcon from '../assets/icons/instagram';
 import UserIcon from '../assets/icons/user';
+import { Link } from 'react-router-dom';
 
 const CartIcon = ICONS.cart;
 
@@ -50,7 +51,7 @@ const Navbar = () => {
                 <div className="logo"><img src={images.logo} alt="" /></div>
                 <nav className="nav flex align-items-center gap-9 justify-between">
                     <a className='hover:underline' href="/">Home</a>
-                    <a className='hover:underline' href="/">Shop</a>
+                    <Link to='/Shop' className='hover:underline' href="/">Shop</Link>
                     <a className='hover:underline' href="/">Sale</a>
                     <a className='hover:underline' href="/">Features</a>
                     <a className='hover:underline' href="/">Blog</a>

@@ -36,20 +36,13 @@ const Home = () => {
             <div id="default-carousel" className="relative w-full" data-carousel="static">
                 <div className="relative overflow-hidden md:h-[35rem]">
                     {[images.carousel1, images.carousel2, images.carousel3].map((bg, index) => (
-                        <div
-                            key={index}
-                            className="duration-300 ease-in-out absolute inset-0 transition-all transform translate-x-0 text-center flex justify-center items-center flex-col"
-                            data-carousel-item=""
+                        <div key={index} className="duration-300 ease-in-out absolute inset-0 transition-all transform translate-x-0 text-center flex justify-center items-center flex-col" data-carousel-item=""
                             style={{ backgroundImage: `url(${bg})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
                         >
                             <div className='flex flex-col gap-3 items-center'>
                                 <span className='text-white font-bold mb-3'>Women collection 2025</span>
                                 <h1 className='text-white font-bold text-5xl mb-8'>NEW ARRIVALS</h1>
-                                <motion.button
-                                    initial={{ opacity: 0, y: 40 }}
-                                    whileInView={{ opacity: 1, y: 0 }}
-                                    transition={{ duration: 0.6, ease: "easeOut" }}
-                                    viewport={{ once: true }}
+                                <motion.button initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, ease: "easeOut" }} viewport={{ once: true }}
                                     className="bg-white w-fit text-black rounded-4xl px-14 py-3"
                                 >
                                     SHOP NOW

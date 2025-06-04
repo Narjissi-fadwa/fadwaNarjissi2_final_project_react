@@ -4,6 +4,7 @@ import HomePage from './pages/home/home';
 import Navbar from './layouts/navbar';
 import ErrorPage from './pages/error/error';
 import Footer from './layouts/footer';
+import ShopPage from './pages/shop/shop';
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
       <Routes>
         <Route path="*" element={<ErrorPage />} />
         <Route path="/" element={<HomePage />} />
+        <Route path="/Shop" element={<ShopPage />} />
       </Routes>
 
       <Footer />

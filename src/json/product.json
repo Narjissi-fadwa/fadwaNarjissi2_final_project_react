@@ -2,38 +2,55 @@
     {
         "id": 1,
         "image": "shopy7",
-        "name": "Boxy7 T-Shirt with Roll Sleeve",
-        "price": 20.0,
+        "name": "Boxy7 jean",
+        "price": 35.0,
         "bestSeller": true,
         "featured": false,
-        "sale": false
+        "sale": false,
+        "L":true,
+        "M":true,
+        "S":true,
+        "XL":false
+
     },
     {
         "id": 2,
         "image": "shopy6",
-        "name": "Boxy6 T-Shirt with Roll Sleeve",
-        "price": 20.0,
+        "name": "Boxy6 denim jacket",
+        "price": 40.0,
         "bestSeller": true,
         "featured": false,
-        "sale": false
+        "sale": false,
+        "L":true,
+        "M":true,
+        "S":true,
+        "XL":true
     },
     {
         "id": 3,
         "image": "shopy5",
         "name": "Boxy5 T-Shirt with Roll Sleeve",
-        "price": 20.0,
+        "price": 15.0,
         "bestSeller": true,
         "featured": false,
-        "sale": false
+        "sale": false,
+        "L":true,
+        "M":true,
+        "S":false,
+        "XL":true
     },
     {
         "id": 4,
         "image": "shopy4",
-        "name": "Boxy4 T-Shirt with Roll Sleeve",
+        "name": "Boxy4 white blouse",
         "price": 20.0,
         "bestSeller": true,
         "featured": false,
-        "sale": false
+        "sale": false,
+        "L":true,
+        "M":true,
+        "S":true,
+        "XL":false
     },
     {
         "id": 5,
@@ -43,7 +60,11 @@
         "oldPrice": 30.0,
         "bestSeller": false,
         "featured": false,
-        "sale": true
+        "sale": true,
+        "L":true,
+        "M":true,
+        "S":true,
+        "XL":false
     },
     {
         "id": 6,
@@ -53,24 +74,36 @@
         "bestSeller": false,
         "featured": false,
         "home": true,
-        "sale": false
+        "sale": false,
+        "L":true,
+        "M":true,
+        "S":true,
+        "XL":false
     },
     {
         "id": 7,
         "image": "item03",
-        "name": "Boxy1 T-Shirt with Roll Sleeve",
-        "price": 20.0,
+        "name": "Boxy1 denim jacket",
+        "price": 40.0,
         "bestSeller": false,
         "featured": true,
-        "sale": false
+        "sale": false,
+        "L":true,
+        "M":true,
+        "S":true,
+        "XL":true
     },
     {
         "id": 8,
         "image": "shopy8",
-        "name": "Boxy T-Shirt with Sleeve Detail",
+        "name": "Boxy white T-Shirt ",
         "price": 20.0,
         "bestSeller": false,
         "featured": false,
-        "sale": false
+        "sale": false,
+        "L":true,
+        "M":true,
+        "S":true,
+        "XL":false
     }
 ]
