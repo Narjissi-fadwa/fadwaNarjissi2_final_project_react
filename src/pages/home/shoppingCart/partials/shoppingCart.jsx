@@ -1,13 +1,18 @@
 import React from 'react';
 import { useCart } from '../../../../context';
+import images from '../../../../constant/images';
 
 
 const ShoppingCart = () => {
     const { cartItems, removeFromCart } = useCart();
 
     return (
-        <div className="max-w-4xl mx-auto py-10 px-4">
-            <h1 className="text-3xl font-bold mb-6">Shopping Cart</h1>
+        <div className="w-full mx-auto ">
+            <div
+                className="pt-30 pb-20 flex-col w-full height-[200px] min-height-[200px] text-center"
+                style={{ backgroundImage: `url(${images.about})`, backgroundSize: 'cover', backgroundPosition: 'center 0', backgroundRepeat: 'no-repeat', }}>
+                <h2 className="text-5xl text-white font-bold">Shopping cart</h2>
+            </div>
             {cartItems.length === 0 ? (
                 <p>Your cart is empty.</p>
             ) : (
