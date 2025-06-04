@@ -176,6 +176,25 @@ const Home = () => {
                     ))}
                 </div>
             </div>
+            <div className="py-12 px-4 text-center">
+                <h2 className="text-2xl md:text-3xl font-bold mb-12">@ FOLLOW US ON INSTAGRAM</h2>
+
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+                    
+                    <div className="px-4 border-r-2 border-gray-200">
+                        <h3 className="text-lg font-medium mb-1">Free Delivery Worldwide</h3>
+                        <p className="text-sm text-gray-500 italic">Mirum est notare quam littera gothica</p>
+                    </div>
+                    <div className="px-4 border-r-2 border-gray-200">
+                        <h3 className="text-lg font-medium mb-1">30 Days Return</h3>
+                        <p className="text-sm text-gray-500 italic">Simply return it within 30 days for an exchange.</p>
+                    </div>
+                    <div className="px-4">
+                        <h3 className="text-lg font-medium mb-1">Store Opening</h3>
+                        <p className="text-sm text-gray-500 italic">Shop open from Monday to Sunday</p>
+                    </div>
+                </div>
+            </div>
             {showModal && (
                 <div className="fixed top-0 left-0 w-full h-full bg-black/40 flex items-center justify-center z-[9999]">
                     <div className="bg-white px-6 py-4 rounded shadow-lg text-center">
