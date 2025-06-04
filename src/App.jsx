@@ -9,6 +9,7 @@ import AboutPage from './pages/about/about';
 import ContactPage from './pages/contact/contact';
 import Cart from './pages/home/shoppingCart/shoppingCart';
 import { CartProvider } from './context';
+import UserPage from './pages/user/user';
 
 
 const App = () => {
@@ -22,6 +23,7 @@ const App = () => {
     <Route path="/About" element={<AboutPage />} />
     <Route path="/Contact" element={<ContactPage />} />
     <Route path="/ShoppingCart" element={<Cart />} />
+    <Route path="/User" element={<UserPage />} />
     <Route path="*" element={<ErrorPage />} />
   </Routes>
   <Footer />

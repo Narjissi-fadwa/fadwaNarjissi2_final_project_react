@@ -61,7 +61,7 @@ const Navbar = () => {
                     <Link to='/Contact' className='hover:underline'>Contact</Link>
                 </nav>
                 <div className='icons flex items-center gap-3'>
-                    <UserIcon className="w-6 h-6 text-gray-600 hover:text-[#e65540]" />
+                    <Link to="/User"><UserIcon className="w-6 h-6 text-gray-600 hover:text-[#e65540]" /></Link>
                     <Link to='/ShoppingCart' className="relative">
             <CartIcon className="w-6 h-6 text-gray-600 hover:text-[#e65540]" />
             {itemCount > 0 && (
