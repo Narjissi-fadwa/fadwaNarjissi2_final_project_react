@@ -41,6 +41,7 @@ import shopy6 from "../assets/images/shopy6.webp"
 import shopy7 from "../assets/images/shopy7.webp"
 import shopy8 from "../assets/images/shopy8.webp"
 import visa from "../assets/images/visa.png.webp"
+import about from "../assets/images/banner-about.webp"
 
 export default {
     banner02,
@@ -85,5 +86,6 @@ export default {
     shopy6,
     shopy7,
     shopy8,
-    visa
+    visa,
+    about
 }

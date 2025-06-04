@@ -55,8 +55,8 @@ const Navbar = () => {
                     <a className='hover:underline' href="/">Sale</a>
                     <a className='hover:underline' href="/">Features</a>
                     <a className='hover:underline' href="/">Blog</a>
-                    <a className='hover:underline' href="/">About</a>
-                    <a className='hover:underline' href="/">Contact</a>
+                    <Link to='/About' className='hover:underline' href="/">About</Link>
+                    <Link to='/Contact'  className='hover:underline' href="/">Contact</Link>
                 </nav>
                 <div className='icons flex align-items-center gap-3'>
                     <UserIcon className="w-6 h-6 text-gray-600 hover:text-[#e65540]" />
