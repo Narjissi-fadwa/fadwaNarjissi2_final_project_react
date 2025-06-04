@@ -8,12 +8,15 @@ import GoogleIcon from '../assets/icons/google';
 import InstagramIcon from '../assets/icons/instagram';
 import UserIcon from '../assets/icons/user';
 import { Link } from 'react-router-dom';
+import { useCart } from '../context';
 
 const CartIcon = ICONS.cart;
 
 const Navbar = () => {
     const [isScrolled, setIsScrolled] = useState(false);
     const [menuOpen, setMenuOpen] = useState(false);
+    const { cartItems } = useCart(); 
+    const itemCount = cartItems.reduce((acc, item) => acc + item.quantity, 0); 
 
     useEffect(() => {
         const handlScroll = () => {
@@ -59,10 +62,14 @@ const Navbar = () => {
                 </nav>
                 <div className='icons flex items-center gap-3'>
                     <UserIcon className="w-6 h-6 text-gray-600 hover:text-[#e65540]" />
-                    <div className="relative">
-                        <CartIcon className="w-6 h-6 text-gray-600 hover:text-[#e65540]" />
-                        <span className="absolute -top-0 -right-0 bg-red-600 text-white text-xs px-1 rounded-full"></span>
-                    </div>
+                    <Link to='/ShoppingCart' className="relative">
+            <CartIcon className="w-6 h-6 text-gray-600 hover:text-[#e65540]" />
+            {itemCount > 0 && (
+                <span className="absolute -top-1 -right-2 bg-red-600 text-white text-xs px-1 rounded-full">
+                    {itemCount}
+                </span>
+            )}
+        </Link>
                 </div>
                 <div className="md:hidden flex items-center gap-4">
                     <button className="text-gray-600 hover:text-[#e65540]" onClick={() => setMenuOpen(true)}>

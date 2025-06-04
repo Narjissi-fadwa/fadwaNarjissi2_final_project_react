@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import productJson from '../../../json/product.json';
 import { Link } from 'react-router-dom';
 
+
 const filters = [
     { label: 'All', key: 'all' },
     { label: 'Best Seller', key: 'bestSeller' },
@@ -15,6 +16,7 @@ const filters = [
 const Home = () => {
     const [selectedCategory, setSelectedCategory] = useState('all');
     const [allProducts, setAllProducts] = useState([]);
+    
 
     useEffect(() => {
         const carouselElement = document.getElementById('default-carousel');

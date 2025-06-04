@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import images from '../../../constant/images';
 import productJson from '../../../json/product.json';
+import { useCart } from '../../../context/index';
 
 const filterCategory = [
     { label: 'All', key: 'all' },
@@ -20,6 +21,9 @@ const Shop = () => {
     const [selectedSize, setSelectedSize] = useState('all');
     const [selectedPrice, setSelectedPrice] = useState('all');
     const [allProducts, setAllProducts] = useState([]);
+    const { addToCart } = useCart();
+    const [showModal, setShowModal] = useState(false);
+    const [addedItemName, setAddedItemName] = useState('');
 
     useEffect(() => {
         const preparedProducts = productJson.map(product => ({
@@ -46,6 +50,12 @@ const Shop = () => {
     };
 
     const visibleProducts = filterProducts();
+    const handleAddToCart = (item) => {
+        addToCart(item);
+        setAddedItemName(item.name);
+        setShowModal(true);
+        setTimeout(() => setShowModal(false), 2000);
+    };
 
     return (
         <div>
@@ -64,7 +74,7 @@ const Shop = () => {
                         <div className="flex flex-col gap-3 px-2 sm:px-0">
                             {filterCategory.map(category => (
                                 <a key={category.key} href="#" onClick={e => { e.preventDefault(); setSelectedCategory(category.key); }}
-                                    className={`sm:px-2 px-1 sm:text-[17px] text-[13px] font-normal transition-colors duration-200 no-underline ${ selectedCategory === category.key ? 'text-black font-bold' : 'text-[#2222228d]'  }`}>
+                                    className={`sm:px-2 px-1 sm:text-[17px] text-[13px] font-normal transition-colors duration-200 no-underline ${selectedCategory === category.key ? 'text-black font-bold' : 'text-[#2222228d]'}`}>
                                     {category.label}
                                 </a>
                             ))}
@@ -109,9 +119,12 @@ const Shop = () => {
                                         Sale
                                     </span>
                                 )}
-                                <img  src={item.image} alt={item.name} className="w-full h-full object-cover block"/>
+                                <img src={item.image} alt={item.name} className="w-full h-full object-cover block" />
                                 <div className="absolute inset-0 flex justify-center items-center bg-black/30 opacity-100 lg:opacity-0 lg:group-hover:opacity-100 transition duration-300">
-                                    <button className="bg-white absolute bottom-6 text-black px-6 py-2 rounded-2xl hover:bg-[#e65540] hover:text-white">
+                                    <button
+                                        onClick={() => handleAddToCart(item)}
+                                        className="bg-white absolute bottom-6 text-black px-6 py-2 rounded-2xl hover:bg-[#e65540] hover:text-white"
+                                    >
                                         ADD TO CART
                                     </button>
                                 </div>
@@ -120,7 +133,7 @@ const Shop = () => {
                                 <div className="text-[15px] text-[#222] mb-0.5">
                                     {item.name}
                                 </div>
-                                <div className={`text-[15px] font-normal ${item.sale ? 'text-[#e65540]' : 'text-[#222]' }`} >
+                                <div className={`text-[15px] font-normal ${item.sale ? 'text-[#e65540]' : 'text-[#222]'}`} >
                                     {item.sale && (
                                         <span className="text-[#888] line-through mr-2">
                                             ${item.oldPrice?.toFixed(2)}
@@ -133,6 +146,15 @@ const Shop = () => {
                     ))}
                 </div>
             </div>
+            {showModal && (
+                <div className="fixed top-0 left-0 w-full h-full bg-black/40 flex items-center justify-center z-[9999]">
+                    <div className="bg-white px-6 py-4 rounded shadow-lg text-center">
+                        <p className="text-lg font-medium text-[#e65540]">
+                            {addedItemName} has been added to your cart!
+                        </p>
+                    </div>
+                </div>
+            )}
         </div>
     );
 };
